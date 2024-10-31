@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>iframeを使用した取り込み</title>
+</head>
+<body id="main">
+  <h1>iframeの切り替え</h1>
+  <button onclick="loadPage('page1.html')">ページ1を表示</button>
+  <button onclick="loadPage('page2.html')">ページ2を表示</button>
+  
+  <iframe id="contentFrame" src="page1.html" width="400" height="400" title="コンテンツエリア"></iframe>
+
+  <script>
+      function loadPage(page) {
+          document.getElementById('contentFrame').src = page;
+      }
+  </script>
+</body>
+</html>
