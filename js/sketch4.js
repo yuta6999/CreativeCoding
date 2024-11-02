@@ -1,8 +1,20 @@
 function setup() {
-  createCanvas(400, 400);
+  //createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+  frameRate(30); // フレームレートを30に設定
 
   describe('A yellow circle on a black background. The circle opens and closes its mouth.');
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function touchStarted() {
+  // タッチの動作を記述
+  return false; // 画面がスクロールしないように
+}
+
 
 function draw() {
   background(0);
