@@ -2,7 +2,7 @@
 let colors = ['#7D2A82', '#E2841A', '#1D121F', '#AD6BA2', '#EEC800', '#DEA014', '#87AE22', '#A47A46', '#464066'];
 
 function setup() {
-  createCanvas(400, 400); // キャンバスのサイズ
+  createCanvas(windowWidth, windowHeight);
   noLoop(); // 一度だけ描画
 }
 
@@ -18,4 +18,6 @@ function draw() {
       rect(x, y, tileSize, tileSize); // タイルを描画
     }
   }
+  console.log(height);
+  console.log(width);
 }

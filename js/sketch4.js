@@ -1,7 +1,7 @@
 function setup() {
   //createCanvas(400, 400);
   createCanvas(windowWidth, windowHeight);
-  frameRate(30); // フレームレートを30に設定
+  frameRate(60); // フレームレートを30に設定
 
   describe('A yellow circle on a black background. The circle opens and closes its mouth.');
 }
