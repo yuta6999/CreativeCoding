@@ -13,4 +13,6 @@ canvas {
 
 #contentFrame {
   margin-top: 14px;
+  width: 100vw;
+  height: 600px;
 }

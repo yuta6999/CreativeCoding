@@ -12,7 +12,8 @@ function setup() {
   );
   // createCanvas(720, 400);
   // createCanvas(600, 600);
-  createCanvas(400, 400); // キャンバスのサイズ
+  //createCanvas(400, 400); // キャンバスのサイズ
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   background(50);
 }

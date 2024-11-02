@@ -2,7 +2,8 @@
 let colors = ['#7D2A82', '#E2841A', '#1D121F', '#AD6BA2', '#EEC800', '#DEA014', '#87AE22', '#A47A46', '#464066'];
 
 function setup() {
-  createCanvas(400, 400);
+  //createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   noLoop();
 }
 
