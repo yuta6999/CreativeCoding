@@ -1,7 +1,7 @@
 function setup() {
   //createCanvas(400, 400);
   createCanvas(windowWidth, windowHeight);
-  frameRate(60); // フレームレートを30に設定
+  frameRate(60); // フレームレートを60に設定
 
   describe('A yellow circle on a black background. The circle opens and closes its mouth.');
 }
@@ -28,6 +28,7 @@ function draw() {
   let startAngle = biteSize * sin(frameCount * 0.1) + biteSize;
   let endAngle = TWO_PI - startAngle;
 
+
   // Draw the arc.
-  arc(100, 100, 160, 160, startAngle, endAngle, PIE);
+  arc(frameCount - 110, 100, 160, 160, startAngle, endAngle, PIE);
 }
