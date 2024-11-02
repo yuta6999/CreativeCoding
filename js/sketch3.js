@@ -18,6 +18,11 @@ function setup() {
   background(50);
 }
 
+function touchStarted() {
+  // タッチの動作を記述
+  return false; // 画面がスクロールしないように★★★★★
+}
+
 function draw() {
   // Move the 0,0 coordinates of the canvas to the center, instead of in
   // the top left corner.
