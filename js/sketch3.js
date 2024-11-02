@@ -20,7 +20,9 @@ function setup() {
 
 function touchStarted() {
   // タッチの動作を記述
-  return false; // 画面がスクロールしないように★★★★★
+  return false; // 画面がスクロールしないように★★★★★  
+  document.addEventListener('touchstart', (e) => e.preventDefault(), { passive: false });
+  document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
 }
 
 function draw() {
